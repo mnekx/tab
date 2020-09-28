@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: darkred;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr; }
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .tab .tablink {
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    transition: all 1s;
+    font-size: 25px; }
+    .tab .tablink:hover {
+      background: darkgreen;
+      color: white;
+      cursor: pointer; }
+
+.yaliyomo-tab {
+  padding: 1rem;
+  font-size: 35px;
+  animation: fifia 2s; }
+
+.active {
+  background: #009700; }
+
+@keyframes fifia {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
